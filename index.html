@@ -2,11 +2,232 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MRO web cite</title>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,600,700' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
 
+    <!--   HEADER   -->
+    <div id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+
+                        <div class="col-lg-2"> <a href="#"><img class="logo" src="images/logo.jpg" alt="logo"></a> </div>
+
+                        <div class="col-lg-2 col-lg-offset-8 log-in-form text-right">
+                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                            <a href="#">Client Log In</a>
+                        </div>
+
+                        <div class="col-lg-3"> <h1>Tagline TBD</h1> </div>
+
+                        <div class="col-lg-3 col-lg-offset-2 call">
+                            <img src="images/phone.png" alt="phone">
+                            <p><strong>Call Now</strong>&nbsp;&nbsp;555-555-5555</p>
+                        </div>
+
+                        <div class="col-lg-2 last">
+                            <form class="search" action="">
+                                <input class="search_field" type="text" placeholder="Search" required>
+                                <input class="magnifier" type="submit" id="edit-submit" name="op" value="">
+                            </form>
+                        </div>
+
+                        <div class="col-lg-10 menu">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">What is Enterprise MRO?</a></li>
+                                    <li><a href="#">Services?</a></li>
+                                    <li>
+                                        <a href="#">Industries</a>
+                                        <span class="triangle-wrapper"></span>
+                                        <div class="sub-menu">
+                                            <ul>
+                                                <li><a href="#">Basic Materials</a></li>
+                                                <li><a href="#">Consumer Goods & Services</a></li>
+                                                <li><a href="#">Service Industry</a></li>
+                                                <li><a href="#">Industrials</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">Resources</a></li>
+                                    <li><a href="#">Case Studies</a></li>
+                                    <li><a href="#">Geographic Presence</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li class="last"><a href="#">Contact Us</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--   BODY   -->
+
+    <!--   CAROUSEL   -->
+
+    <div id="mainpart" class="container">
+        <div class="row bottom-margin">
+            <div class="col-lg-9">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="images/slider_1.jpg" alt="slide">
+                            <div class="carousel-caption slider-text">
+                                <h2>Totally Focused on <br>Helping You Focus.</h2>
+                                <p>Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine.</p>
+                                <div class="action"><a href="#">Call to Action<i class="fa fa-chevron-right chevron-slider"></i></a></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/slider_1.jpg" alt="slide">
+                            <div class="carousel-caption">
+                                ...
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/slider_1.jpg" alt="slide">
+                            <div class="carousel-caption">
+                                ...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 right-block">
+                <a href="#">
+                    <span><i class="fa fa-chevron-right chevron-block"></i></span>
+                    <span class="link-text">Request a Consultation</span>
+                </a>
+                <a href="#">
+                    <span><i class="fa fa-chevron-right chevron-block"></i></span>
+                    <span class="link-text">Ask a Question</span>
+                </a>
+                <a href="#">
+                    <span><i class="fa fa-chevron-right chevron-block"></i></span>
+                    <span class="link-text">Request a Sample Data Cleanse</span>
+                </a>
+                <a class="last" href="#">
+                    <span><i class="fa fa-chevron-right chevron-block"></i></span>
+                    <span class="link-text">Request an MRO Evaluation</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 promo-top">
+                <h4>Customized Solutions to Simplify The Complex World of MRO</h4>
+                <p>It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-9 features">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="promo">
+                            <a href="#" class="qaz"><img src="images/Img_1.jpg" alt="image1"></a>
+                            <img class="hover-image" src="images/img_learn_more.jpg" alt="hover">
+                            <a href="#" class="promo-link">Data Management</a>
+                        </div>
+
+                        <div class="promo">
+                            <a href="#"><img src="images/Img_4.jpg" alt="image4"></a>
+                            <img class="hover-image" src="images/img_learn_more.jpg" alt="hover">
+                            <a href="#" class="promo-link">Compliance</a>
+                        </div>
+
+                        <div class="promo">
+                            <a href="#"><img src="images/Img_1.jpg" alt="image1"></a>
+                            <img class="hover-image" src="images/img_learn_more.jpg" alt="hover">
+                            <a href="#" class="promo-link">Predictive Inventory Management</a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4">
+                        <div class="promo">
+                            <a href="#"><img src="images/Img_2.jpg" alt="image2"></a>
+                            <img class="hover-image" src="images/img_learn_more.jpg" alt="hover">
+                            <a href="#" class="promo-link">Sourcing & Supplier Relations</a>
+                        </div>
+
+                        <div class="promo">
+                            <a href="#"><img src="images/Img_5.jpg" alt="image5"></a>
+                            <img class="hover-image" src="images/img_learn_more.jpg" alt="hover">
+                            <a href="#" class="promo-link">Engineering Services</a>
+                        </div>
+
+                        <div class="promo">
+                            <a href="#"><img src="images/Img_2.jpg" alt="image2"></a>
+                            <img class="hover-image" src="images/img_learn_more.jpg" alt="hover">
+                            <a href="#" class="promo-link">Underlying Technology and Continuous Improvement</a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4">
+                        <div class="promo">
+                            <a href="#"><img src="images/Img_3.jpg" alt="image3"></a>
+                            <img class="hover-image" src="images/img_learn_more.jpg" alt="hover">
+                            <a href="#" class="promo-link">Transaction Services</a>
+                        </div>
+
+                        <div class="promo">
+                            <a href="#"><img src="images/Img_6.jpg" alt="image6"></a>
+                            <img class="hover-image" src="images/img_learn_more.jpg" alt="hover">
+                            <a href="#" class="promo-link">Storeroom Operations</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                123
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-9 main-information">
+                <h3>Why Partner with SDI?</h3>
+
+                <p>He must have tried it a hundred times, shut his eyes so that he wouldn't have to look at the floundering legs, and only stopped when he began to feel a mild, dull pain there that he had never felt before.</p>
+
+                <p>"Oh, God", he thought, "what a strenuous career it is that I've chosen! Travelling day in and day out.</p>
+
+                <p>Doing business like this takes much more effort than doing your own business at home, and on top of that there's the curse of travelling, worries about making train connections, bad and irregular food, contact with differen</p>
+
+                <div class="action"><a href="#">Read more<i class="fa fa-chevron-right chevron-slider"></i></a></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 promo-bottom">
+                <h4>Headline About Integrated MRO</h4>
+                <p>It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff.</p>
+                <div class="action"><a href="#">It’s not just parts<i class="fa fa-chevron-right chevron-slider"></i></a></div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
