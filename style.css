@@ -85,15 +85,22 @@ body a:hover, body a:focus {text-decoration: none; color: #6c7381}
     width: auto;
     padding: 0 -15px;
 }
+
 .log-in-form a, {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 16px;
 }
+
+a .glyphicon {
+    color: #2d2f39;
+    margin-right: 5px;
+}
+
 .header .container .row .call {
     background: #fbaa12;
     border-radius: 30px;
-    padding: 10px 0;
+    padding: 10px 15px;
     width: 250px;
     margin-left: 20%;
 }
@@ -356,6 +363,113 @@ nav > ul > li:hover:after {
     opacity: 0.7;
 }
 
+/* ----- RIGHT COLUMN ----- */
+
+.right-column-block {
+    border-top: 1px solid #151723;
+    text-align: left;
+    float: left;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    min-width: 262px;
+}
+
+.right-column-block h5 {
+    margin-bottom: 15px;
+    font-family: "Lato", sans-serif;
+    color:  #151723;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.right-column-block a {
+    float: left;
+    font-family: "Lato", sans-serif;
+    color:  #6c7381;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+    width: 100%;
+}
+.right-column-block a:hover {
+    color: #151723;
+}
+
+.right-column-block p {
+    font-family: "Lato", sans-serif
+    color:  #6c7381;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 20px;
+}
+
+.right-column-block .action a {
+    border-radius: 35px;
+    background: #d9e0e5;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    color: #151723;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    float: left;
+    text-shadow: none;
+    width: auto;
+    margin-top: 10px;
+}
+
+.right-column-block .action .chevron-slider {
+    margin-left: 15px;
+    font-size: 14px;
+    color: #c3c9ce;
+}
+
+.employee {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.employee img {
+    float: left;
+    margin-right: 10px;
+}
+
+.employee .name {
+    font-family: "Lato", sans-serif;
+    color:  #151723;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.employee a {
+    width: auto;
+    color: #14549c;
+}
+
+.employee a:hover {text-decoration: underline;
+    color: #14549c;
+    /*cursor: pointer*/
+}
+
+.link-title a {
+    color:  #151723;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.link-description {
+    color:  #6c7381;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+    /* ----- RIGHT COLUMN ENDS ----- */
 
 .main-information {
     width: 870px;
@@ -407,7 +521,7 @@ nav > ul > li:hover:after {
     text-align: center;
     background: #ffffff;
     height: 180px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .row .promo-bottom h4 {
