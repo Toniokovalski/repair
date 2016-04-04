@@ -185,14 +185,14 @@ a .glyphicon {
     display: block;
 }
 
-nav > ul > li:hover:after {
+nav > ul > li:hover .sub-menu:before {
     content: '';
     display: block;
     width: 0;
     height: 0;
     position: absolute;
     left: 50%;
-    top: 44px;
+    top: -6px;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
     border-bottom: 6px solid #151723;
@@ -212,13 +212,14 @@ nav > ul > li:hover:after {
     left: 10%;
 }
 
-.carousel-inner .slider-text h2 {
+.carousel-inner .carousel-caption h2 {
     text-transform: uppercase;
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-size: 36px;
     color: #ffffff;
     margin-bottom: 25px;
+    text-align: left;
 }
 
 .carousel-inner .carousel-caption p {
@@ -227,6 +228,7 @@ nav > ul > li:hover:after {
     font-size: 20px;
     color: #ffffff;
     margin-bottom: 25px;
+    text-align: left;
 }
 
 .carousel-inner .carousel-caption .action {
@@ -263,7 +265,7 @@ nav > ul > li:hover:after {
     width: 100%;
     background: #fbab12;
     float: left;
-    padding: 0 40px;
+    padding: 0 20px;
     margin-bottom: 10px;
     font-family: "Lato", sans-serif;
     font-weight: 700;
@@ -313,15 +315,16 @@ nav > ul > li:hover:after {
     background: #ffffff;
     min-height: 120px;
     margin-bottom: 30px;
+    padding-top: 20px;
 }
 
 .row .promo-top h4 {
     font-family: "Lato", sans-serif;
+    font-style: italic;
     color:  #151723;
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
-    margin-top: 30px;
 }
 
 .row .promo-top p {
@@ -362,8 +365,10 @@ nav > ul > li:hover:after {
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.7;
+    opacity: 0.8;
 }
+
+.features .promo img {width: 97%;}
 
 /* ----- RIGHT COLUMN ----- */
 
@@ -372,7 +377,6 @@ nav > ul > li:hover:after {
     text-align: left;
     float: left;
     padding-bottom: 30px;
-    padding-top: 10px;
     min-width: 262px;
 }
 
@@ -382,7 +386,7 @@ nav > ul > li:hover:after {
     color:  #151723;
     font-size: 14px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 22px;
     text-transform: uppercase;
 }
 
@@ -490,7 +494,7 @@ nav > ul > li:hover:after {
 }
 
 .main-information p {
-    margin: 40px 0 40px 30px;
+    margin: 30px 0 30px 30px;
     font-family: "Lato", sans-serif;
     color:  #151723;
     font-size: 16px;
@@ -506,7 +510,7 @@ nav > ul > li:hover:after {
     font-size: 16px;
     color: #151723;
     text-transform: uppercase;
-    padding: 10px 20px;
+    padding: 5px 10px;
     float: left;
     text-shadow: none;
     margin-left: 30px;
@@ -524,6 +528,7 @@ nav > ul > li:hover:after {
     background: #ffffff;
     height: 180px;
     margin-bottom: 50px;
+    padding-top: 20px;
 }
 
 .row .promo-bottom h4 {
@@ -532,7 +537,7 @@ nav > ul > li:hover:after {
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
-    margin-top: 30px;
+    font-style: italic;
 }
 
 .row .promo-bottom p {
@@ -571,7 +576,7 @@ nav > ul > li:hover:after {
 .footer {
     width: 100%;
     background: #151723;
-    min-height: 200px;
+    min-height: 170px;
     text-align: left;
     margin-bottom: 30px;
 }
@@ -591,15 +596,17 @@ nav > ul > li:hover:after {
     color:  #6c7381;
     font-size: 14px;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 11px;
 }
 
 .social a {display: inline-block}
 
 .fa-twitter, .fa-linkedin-square, .fa-envelope {
     color: #2d2f39;
-    margin-top: 20px;
+    margin-top: 5px;
 }
+
+.fa-twitter:hover, .fa-linkedin-square:hover, .fa-envelope:hover {color: #b2bbc1;}
 
 .fa-twitter, .fa-linkedin-square {margin-right: 20px}
 
@@ -616,3 +623,4 @@ nav > ul > li:hover:after {
 }
 
 .down-footer .down-log-in a .glyphicon-user {color: #babec0; top: 4px; font-size: 18px; margin-right: 5px}
+
