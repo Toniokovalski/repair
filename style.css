@@ -95,6 +95,8 @@ body a:hover, body a:focus {text-decoration: none; color: #6c7381}
 a .glyphicon {
     color: #2d2f39;
     margin-right: 5px;
+    font-size: 18px;
+    top: 4px;
 }
 
 .header .container .row .call {
@@ -563,3 +565,54 @@ nav > ul > li:hover:after {
     border-radius: 30px;
     color: #fbab12;
 }
+
+/* -----FOOTER STARTS HERE----- */
+
+.footer {
+    width: 100%;
+    background: #151723;
+    min-height: 200px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.footer h5 {
+    font-family: "Lato", sans-serif;
+    color:  #e9edf0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.footer p {
+    font-family: "Lato", sans-serif;
+    color:  #6c7381;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.social a {display: inline-block}
+
+.fa-twitter, .fa-linkedin-square, .fa-envelope {
+    color: #2d2f39;
+    margin-top: 20px;
+}
+
+.fa-twitter, .fa-linkedin-square {margin-right: 20px}
+
+.down-footer {padding-bottom: 25px}
+
+.down-links a {margin-right: 10px; margin-left: 5px}
+
+.down-footer a {
+    font-family: "Lato", sans-serif;
+    color:  #6c7381;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.down-footer .down-log-in a .glyphicon-user {color: #babec0; top: 4px; font-size: 18px; margin-right: 5px}
