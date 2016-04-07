@@ -1,0 +1,221 @@
+@media screen and (min-width: 1001px) and (max-width: 1199px) {
+    .search_field {width: 100px}
+
+    .row .menu-toggle {
+        display: inline-block;
+        position: relative;
+        left: 97%;
+        top: -20px}
+
+    nav.menu {margin-top: 0px;}
+    nav.menu ul {margin-bottom: 0px}
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .menu-toggle {
+        display: inline-block;
+        position: relative;
+        left: 0;
+        top: 10px;
+    }
+
+    .menu {
+        display: none;
+        margin-top: 30px;
+        height: 300px;
+    }
+
+    .menu ul li {
+        float: left;
+        position: relative;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .carousel-inner img {
+        width: 100%;
+    }
+
+    #mainpart .right-block a {
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
+    .promo {width: auto}
+
+    .main-information {width: auto}
+
+    .down-log-in {margin-bottom: 20px}
+
+    .triangle-wrapper {
+        border: none;
+        background: #c6cfd9;
+        display: block;
+        float: right;
+        border-radius: 5px;
+        width: 20px;
+        height: 20px;
+        padding: 3px;
+        margin-right: 5%;
+        position: relative;
+    }
+
+    .triangle-wrapper span {
+        content: '';
+        position: absolute;
+        left: 35%;
+        border-top: 7px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-left: 8px solid #000000;
+    }
+
+    .triangle-wrapper .triangle-bottom {
+        content: '';
+        position: absolute;
+        left: 8%;
+        top: 30%;
+        border-left: 9px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 9px solid #000000;
+    }
+
+    .menu ul li .sub-menu li {text-align: left; width: 100%; padding: 0 10px}
+
+    .menu ul li a {color: #b2bbc1; padding-bottom: 0}
+
+    .menu .sub-menu {
+        position: relative;
+        left: auto;
+        top: auto;
+        background: #d5dce2;
+        width: 90%;
+        padding-left: 5%;
+        margin-left: 5%;
+    }
+
+    .menu li:hover .sub-menu {
+        overflow: hidden;
+        margin-top: 10px;
+        display: none;
+        border-radius: 10px;
+    }
+
+    .menu li:hover .sub-menu a {
+        color: #151723;
+        width: 95%;
+    }
+
+    .down-links a {margin-right: 10px; margin-left: 0;}
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .search_field {
+        width: 120px;
+    }
+
+    .carousel-inner .slider-text {
+        margin-bottom: 0;
+    }
+
+    .carousel-inner .carousel-caption h2 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .carousel-inner .carousel-caption p {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .carousel-inner .carousel-caption .action {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .carousel-inner .carousel-caption .action .chevron-slider {
+        margin-left: 10px;
+        font-size: 12px;
+        padding: 5px 6px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .header .container .row .search {
+        margin-top: 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 425px) {
+    .carousel-inner .carousel-caption p {
+        display: none;
+    }
+
+    .carousel-inner .carousel-caption h2 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .carousel-inner .carousel-caption .action {
+        padding: 3px 7px;
+        font-size: 8px;
+    }
+
+    .header .container .row .call {
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 0;
+        margin-right: 0px;
+    }
+
+    .header .container .row .search {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .header .container .row .last {padding-right: 0; padding-left: 0;}
+
+    .carousel-inner .carousel-caption {
+        width: 85%;
+    }
+
+    .right .call {width: 100%}
+    .right .search {width: 100%}
+
+    .header .right {margin-right: 0px; float: none}
+
+    .search_field {width: 260px;}
+}
+
+
+
+@media screen and (min-width: 426px) and (max-width: 1000px) {
+    .header .container .row .search {
+        margin-top: 10px;
+    }
+
+    .header .container .row .call {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .header .container .row .search {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .promo-top p, .promo-bottom p {
+        padding: 0 10px;
+    }
+
+    .header .right {margin-right: 0px; float: none}
+
+    .search_field {width: 260px;}
+}

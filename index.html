@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MRO web cite</title>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="responsive.css" media="screen" />
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400italic,400,700' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 </head>
@@ -17,38 +19,41 @@
     <div id="header" class="header">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-md-12 ">
                     <div class="row">
 
-                        <div class="col-lg-2"> <a href="#"><img class="logo" src="images/logo.jpg" alt="logo"></a> </div>
+                        <div class="col-lg-2 col-md-2"> <a href="#"><img class="logo" src="images/logo.jpg" alt="logo"></a> </div>
 
-                        <div class="col-lg-2 col-lg-offset-8 log-in-form text-right">
+                        <div class="col-lg-2 col-lg-offset-8 log-in-form text-right col-md-2 col-md-offset-8">
                             <a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Client Log In</a>
                         </div>
 
-                        <div class="col-lg-3"> <h1>Tagline TBD</h1> </div>
+                        <div class="col-lg-3 col-md-3"><h1>Tagline TBD</h1> </div>
 
-                        <div class="col-lg-3 col-lg-offset-2 call">
-                            <img src="images/phone.png" alt="phone">
-                            <p><strong>Call Now</strong>&nbsp;&nbsp;555-555-5555</p>
+                        <div class="right">
+                            <div class="col-lg-3 call col-md-3 col-sm-3 col-xs-12">
+                                <img src="images/phone.png" alt="phone">
+                                <p><strong>Call Now</strong>&nbsp;&nbsp;555-555-5555</p>
+                            </div>
+
+                            <div class="col-lg-3 search col-md-3 col-sm-3 col-xs-12">
+                                <form action="">
+                                    <input class="search_field" type="text" placeholder="Search" required>
+                                    <input class="magnifier" type="submit" id="edit-submit" name="op" value="">
+                                </form>
+                            </div>
                         </div>
 
-                        <div class="col-lg-2 last">
-                            <form class="search" action="">
-                                <input class="search_field" type="text" placeholder="Search" required>
-                                <input class="magnifier" type="submit" id="edit-submit" name="op" value="">
-                            </form>
-                        </div>
-
-                        <div class="col-lg-10 menu">
-                            <nav>
+                        <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
+                            <a href="#" class="menu-toggle"><div class="menu-toggle-line"></div><div class="menu-toggle-line"></div><div class="menu-toggle-line"></div></a>
+                            <nav class="menu">
                                 <ul>
                                     <li><a href="#">Home</a></li>
                                     <li><a href="#">What is Enterprise MRO?</a></li>
                                     <li><a href="#">Services?</a></li>
                                     <li>
                                         <a href="#">Industries</a>
-                                        <span class="triangle-wrapper"></span>
+                                        <span class="triangle-wrapper"><span></span></span>
                                         <div class="sub-menu">
                                             <ul>
                                                 <li><a href="#">Basic Materials</a></li>
@@ -71,6 +76,8 @@
             </div>
         </div>
     </div>
+
+    <div class="clearfix"></div>
 
     <!--   BODY   -->
 
@@ -117,30 +124,32 @@
                 </div>
             </div>
 
-            <div class="col-lg-3 right-block">
-                <a href="#">
-                    <span><i class="fa fa-chevron-right chevron-block"></i></span>
-                    <span class="link-text">Request a Consultation</span>
-                </a>
-                <a href="#">
-                    <span><i class="fa fa-chevron-right chevron-block"></i></span>
-                    <span class="link-text">Ask a Question</span>
-                </a>
-                <a href="#">
-                    <span><i class="fa fa-chevron-right chevron-block"></i></span>
-                    <span class="link-text">Request a Sample Data Cleanse</span>
-                </a>
-                <a class="last" href="#">
-                    <span><i class="fa fa-chevron-right chevron-block"></i></span>
-                    <span class="link-text">Request an MRO Evaluation</span>
-                </a>
+            <div class="col-lg-3 right-block col-sm-6 col-xs-12">
+                    <a href="#">
+                        <span><i class="fa fa-chevron-right chevron-block"></i></span>
+                        <span class="link-text">Request a Consultation</span>
+                    </a>
+                    <a href="#">
+                        <span><i class="fa fa-chevron-right chevron-block"></i></span>
+                        <span class="link-text">Ask a Question</span>
+                    </a>
+                </div>
+                    <div class="col-lg-3 right-block col-sm-6 col-xs-12">
+                    <a href="#">
+                        <span><i class="fa fa-chevron-right chevron-block"></i></span>
+                        <span class="link-text">Request a Sample Data Cleanse</span>
+                    </a>
+                    <a class="last" href="#">
+                        <span><i class="fa fa-chevron-right chevron-block"></i></span>
+                        <span class="link-text">Request an MRO Evaluation</span>
+                    </a>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="promo-top">
-                    <h4>Customized Solutions to Simplify The Complex World of MRO</h4>
+                    <a href="#"><h4>Customized Solutions to Simplify The Complex World of MRO</h4></a>
                     <p>It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff.</p>
                 </div>
             </div>
@@ -149,7 +158,7 @@
         <div class="row">
             <div class="col-lg-9 features">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                         <div class="promo">
                             <a href="#" class="qaz"><img src="images/Img_1.jpg" alt="image1"></a>
                             <a href="#"><img class="hover-image" src="images/img_learn_more.jpg" alt="hover"></a>
@@ -170,7 +179,7 @@
                     </div>
 
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-4  col-md-4 col-sm-6  col-xs-12">
                         <div class="promo">
                             <a href="#"><img src="images/Img_2.jpg" alt="image2"></a>
                             <a href="#"><img class="hover-image" src="images/img_learn_more.jpg" alt="hover"></a>
@@ -191,7 +200,7 @@
                     </div>
 
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-4  col-md-4 col-sm-6  col-xs-12">
                         <div class="promo">
                             <a href="#"><img src="images/Img_3.jpg" alt="image3"></a>
                             <a href="#"><img class="hover-image" src="images/img_learn_more.jpg" alt="hover"></a>
@@ -208,7 +217,7 @@
 
                 <div class="row">
                     <div class="col-lg-12 main-information">
-                        <h3>Why Partner With Us?</h3>
+                        <a href="#"><h3>Why Partner With Us?</h3></a>
 
                         <p>He must have tried it a hundred times, shut his eyes so that he wouldn't have to look at the floundering legs, and only stopped when he began to feel a mild, dull pain there that he had never felt before.</p>
 
@@ -258,9 +267,9 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="promo-bottom">
-                        <h4>Headline About Integrated MRO</h4>
+                        <a href="#"><h4>Headline About Integrated MRO</h4></a>
                         <p>It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff.</p>
                         <div class="action"><a href="#">It’s not just parts<i class="fa fa-chevron-right chevron-slider"></i></a></div>
                     </div>
@@ -273,30 +282,40 @@
     <div id="footer" class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="row">
-                        <div class="col-lg-7 col-lg-offset-1"><h5>Address</h5></div>
-
-                        <div class="col-lg-3"><h5>Connect With Us</h5></div>
 
 
-                        <div class="col-lg-3 col-lg-offset-1">
-                            <p>SDI, Inc.</p>
-                            <p>1414 Radcliffe Street, Suite 300</p>
-                            <p>Bristol, PA 19007</p>
+                        <div class="col-lg-6 col-lg-offset-2 col-mg-6 col-mg-offset-2">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12"><h5>Address</h5></div>
+
+                                <div class="col-lg-6">
+                                    <p>SDI, Inc.</p>
+                                    <p>1414 Radcliffe Street, Suite 300</p>
+                                    <p>Bristol, PA 19007</p>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <p>Phone: 215-633-1900</p>
+                                    <p>Toll Free: 800-322-2644</p>
+                                    <p>Fax: 215-633-4426</p>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="col-lg-3 col-lg-offset-1">
-                            <p>Phone: 215-633-1900</p>
-                            <p>Toll Free: 800-322-2644</p>
-                            <p>Fax: 215-633-4426</p>
+                        <div class="col-lg-4 col-mg-4">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12"><h5>Connect With Us</h5></div>
+
+                                <div class="col-lg-12 col-md-12 col-sm-12 social">
+                                    <a href="#"><i class="fa fa-twitter fa-3x"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin-square fa-3x"></i></a>
+                                    <a href="#"><i class="fa fa-envelope fa-3x"></i></a>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="col-lg-3 social">
-                            <a href="#"><i class="fa fa-twitter fa-3x"></i></a>
-                            <a href="#"><i class="fa fa-linkedin-square fa-3x"></i></a>
-                            <a href="#"><i class="fa fa-envelope fa-3x"></i></a>
-                        </div>
                     </div>
                 </div>
             </div>

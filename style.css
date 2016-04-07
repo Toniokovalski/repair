@@ -41,14 +41,13 @@ q:before, q:after {
 }
 
 .clearfix:after {
-    content: "."
-display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
+    content: "." !important;
+display: block; !important;
+    height: 0; !important;
+    clear: both; !important;
+    visibility: hidden; !important;
 }
 
-.clearfix {display: inline-block;}
 /* CSS Reset Ends */
 
 body {background: #e9edf0 !important;}
@@ -60,8 +59,10 @@ body a:hover, body a:focus {text-decoration: none; color: #6c7381}
 .header {
     width: 100%;
     background: #151723;
-    height: 150px;
+    height: auto;
     margin-bottom: 40px;
+    min-height: 150px;
+    padding-bottom: 20px;
 }
 
 .header .logo {
@@ -103,18 +104,22 @@ a .glyphicon {
     background: #fbaa12;
     border-radius: 30px;
     padding: 10px 15px;
-    width: 250px;
-    margin-left: 20%;
+    margin-right: 20px;
 }
+
+.header .right {float: right; margin-right: 15px}
+
+.right .call {width: 220px}
+.right .search {width: 160px}
 
 .call img {float: left; margin: 3px 10px 0 5px}
 
-.call p {
+.right .call p {
     padding: 0 -15px;
     margin: 0 -15px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .header .container .row .search {
@@ -142,12 +147,31 @@ a .glyphicon {
     background: url("images/search.png")no-repeat center;
     border: none;
     margin-right: 5px;
+    width: 12px;
 }
 
 /*  ----- MENU ----- */
-.menu nav {margin-top: 30px}
+.menu-toggle {
+    background: #6c7381;
+    width: 35px;
+    height: 34px;
+    border-radius: 5px;
+    display: none;
+}
 
-.menu nav ul li {
+.menu-toggle-line {
+    width: 25px;
+    height: 4px;
+    display: inline-block;
+    border-radius: 10px;
+    background: #fbab12;
+    float: left;
+    margin: 5px 3px 1px 5px;
+}
+
+.menu {margin-top: 30px}
+
+.menu ul li {
     float: left;
     margin-right: 19px;
     font-family: "Open Sans", sans-serif;
@@ -155,26 +179,26 @@ a .glyphicon {
     position: relative;
 }
 
-.menu nav ul li a {color: #b2bbc1; padding-bottom: 31px}
-.menu nav ul li a:hover {color: #fbaa12}
-.menu nav ul li a:focus {color: #ffffff}
+.menu ul li a {color: #b2bbc1; padding-bottom: 56px}
+.menu ul li a:hover {color: #fbaa12}
+.menu ul li a:focus {color: #ffffff}
 
-.menu nav ul li.last {padding-right: 0; margin-right: 0}
+.menu ul li.last {padding-right: 0; margin-right: 0}
 
 /*  ----- MENU 2nd LEVEL ----- */
 .sub-menu {
     width: 250px;
     position: absolute;
-    top: 50px;
+    top: 75px;
     left: -90px;
     display: none;
     z-index: 1;
     transition: opacity linear 0.15s;
-    background: #151723;
     text-align: center;
+    background: #151723;
 }
 
-.menu nav ul li .sub-menu li {
+.menu ul li .sub-menu li {
     width: 250px;
     padding: 10px 0;
     line-height: 1.5;
@@ -185,7 +209,7 @@ a .glyphicon {
     display: block;
 }
 
-nav > ul > li:hover .sub-menu:before {
+.menu > ul > li:hover .sub-menu:before {
     content: '';
     display: block;
     width: 0;
@@ -316,6 +340,11 @@ nav > ul > li:hover .sub-menu:before {
     min-height: 120px;
     margin-bottom: 30px;
     padding-top: 20px;
+    overflow: hidden;
+}
+
+.promo-top a:hover h4, .promo-bottom a:hover h4 {
+    color: #fbab12;
 }
 
 .row .promo-top h4 {
@@ -482,6 +511,7 @@ nav > ul > li:hover .sub-menu:before {
     background: #ffffff;
     text-align: left;
     margin-bottom: 60px;
+    overflow: hidden;
 }
 
 .main-information h3 {
@@ -492,6 +522,8 @@ nav > ul > li:hover .sub-menu:before {
     line-height: 28px;
     margin: 40px 0 0 30px;
 }
+
+.main-information a:hover h3 {color: #fbab12}
 
 .main-information p {
     margin: 30px 0 30px 30px;
@@ -526,9 +558,11 @@ nav > ul > li:hover .sub-menu:before {
 .promo-bottom {
     text-align: center;
     background: #ffffff;
-    height: 180px;
+    min-height: 180px;
     margin-bottom: 50px;
+    overflow: hidden;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .row .promo-bottom h4 {
@@ -579,6 +613,7 @@ nav > ul > li:hover .sub-menu:before {
     min-height: 170px;
     text-align: left;
     margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .footer h5 {
@@ -613,6 +648,7 @@ nav > ul > li:hover .sub-menu:before {
 .down-footer {padding-bottom: 25px}
 
 .down-links a {margin-right: 10px; margin-left: 5px}
+.down-links a:hover {text-decoration: underline;}
 
 .down-footer a {
     font-family: "Lato", sans-serif;
