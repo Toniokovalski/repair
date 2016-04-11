@@ -8,4 +8,8 @@
   "require-dev": {
     "heroku/heroku-buildpack-php": "*"
   }
+  
+  {
+  "git push heroku master"
+  }
 }
