@@ -1,3 +1,5 @@
 .idea
 sdi-home.psd
+.DS_Store
+composer.lock
 /vendor/
