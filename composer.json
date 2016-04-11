@@ -8,6 +8,6 @@
         }
     ],
     "require": {
-	"repair/index.php"
+		"repair/heroku-buildpack-php": "*"
 	}
 }
